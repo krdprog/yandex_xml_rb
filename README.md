@@ -25,7 +25,7 @@ parse.get_xml('domain')
 ```ruby
 require './yandex_xml.rb'
 
-parse = YandexXml.new('your_yandex_login', 'your_yandex_xml_key')
+parse = YandexXml.new(user: 'your_yandex_login', key: 'your_yandex_xml_key')
 
 parse.region = '47'
 

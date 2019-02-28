@@ -9,10 +9,10 @@ require 'open-uri'
 class YandexXml
   attr_accessor :keyword, :region
 
-  def initialize(user, key)
-    @user = user
-    @key = key
-    @region = region
+  def initialize(attributes = {})
+    @user = attributes[:user]
+    @key = attributes[:key]
+    @region = attributes[:region]
   end
 
   # Get data from Yandex.XML by one parameter
